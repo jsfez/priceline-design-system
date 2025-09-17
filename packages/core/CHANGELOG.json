@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.29.0",
+      "tag": "pcln-design-system_v6.29.0",
+      "date": "Wed, 17 Sep 2025 13:58:27 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "add gv- attributes to Button",
+            "author": "Phil Welsh <philwelsh3d@gmail.com>",
+            "commit": "95b0d1afddee598310b8ee739d6c819d186d7a78"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.28.2",
       "tag": "pcln-design-system_v6.28.2",
       "date": "Fri, 08 Aug 2025 17:41:21 GMT",

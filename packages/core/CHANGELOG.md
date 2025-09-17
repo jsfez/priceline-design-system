@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 08 Aug 2025 17:41:21 GMT and should not be manually modified.
+This log was last generated on Wed, 17 Sep 2025 13:58:27 GMT and should not be manually modified.
+
+## 6.29.0
+Wed, 17 Sep 2025 13:58:27 GMT
+
+### Minor changes
+
+- add gv- attributes to Button
 
 ## 6.28.2
 Fri, 08 Aug 2025 17:41:21 GMT
