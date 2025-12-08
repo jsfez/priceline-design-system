@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "7.0.1",
+      "tag": "pcln-icons_v7.0.1",
+      "date": "Mon, 08 Dec 2025 15:37:02 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "SITE-25786: add new icons for typeahead",
+            "author": "Amanda Komsky <amanda.komsky@priceline.com>",
+            "commit": "2df90fa1b7ca39f239f0d6bc0fcd7e1e37ac2a56"
+          }
+        ]
+      }
+    },
+    {
       "version": "7.0.0",
       "tag": "pcln-icons_v7.0.0",
       "date": "Wed, 06 Aug 2025 14:30:51 GMT",

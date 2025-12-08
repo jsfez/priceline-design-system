@@ -1,6 +1,11 @@
 # Change Log - pcln-menu
 
-This log was last generated on Wed, 17 Sep 2025 13:58:27 GMT and should not be manually modified.
+This log was last generated on Mon, 08 Dec 2025 15:37:02 GMT and should not be manually modified.
+
+## 6.2.8
+Mon, 08 Dec 2025 15:37:02 GMT
+
+_Version update only_
 
 ## 6.2.7
 Wed, 17 Sep 2025 13:58:27 GMT

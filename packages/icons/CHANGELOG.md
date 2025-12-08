@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Wed, 06 Aug 2025 14:30:51 GMT and should not be manually modified.
+This log was last generated on Mon, 08 Dec 2025 15:37:02 GMT and should not be manually modified.
+
+## 7.0.1
+Mon, 08 Dec 2025 15:37:02 GMT
+
+### Patches
+
+- SITE-25786: add new icons for typeahead
 
 ## 7.0.0
 Wed, 06 Aug 2025 14:30:51 GMT
