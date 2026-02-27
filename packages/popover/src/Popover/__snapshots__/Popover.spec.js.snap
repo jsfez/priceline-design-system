@@ -178,10 +178,11 @@ exports[`Popover UI Positioning Bottom 1`] = `
 <div
   aria-describedby="dialog-description-1"
   class="c0 c1"
-  data-placement="bottom"
+  data-floating-ui-focusable=""
+  data-placement="left"
   display="inline-block"
   role="dialog"
-  style="position: absolute; top: 8px; left: 8px;"
+  style="position: absolute; top: 8px; left: -8px; visibility: visible;"
   tabindex="-1"
   width="400"
 >
@@ -217,9 +218,9 @@ exports[`Popover UI Positioning Bottom 1`] = `
   <div
     class="c5"
     color="background.lightest"
-    data-placement="bottom"
+    data-placement="left"
     data-testid="popover-arrow"
-    style="top: 3px; left: -1px;"
+    style="top: -1px; right: 3px;"
   />
 </div>
 `;
@@ -296,10 +297,11 @@ exports[`Popover UI Positioning Bottom End 1`] = `
 <div
   aria-describedby="dialog-description-1"
   class="c0 c1"
-  data-placement="bottom-end"
+  data-floating-ui-focusable=""
+  data-placement="left"
   display="inline-block"
   role="dialog"
-  style="position: absolute; top: 8px; left: 8px;"
+  style="position: absolute; top: 8px; left: -8px; visibility: visible;"
   tabindex="-1"
   width="400"
 >
@@ -335,9 +337,9 @@ exports[`Popover UI Positioning Bottom End 1`] = `
   <div
     class="c5"
     color="background.lightest"
-    data-placement="bottom-end"
+    data-placement="left"
     data-testid="popover-arrow"
-    style="top: 3px; left: -1px;"
+    style="top: -1px; right: 3px;"
   />
 </div>
 `;
@@ -414,10 +416,11 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
 <div
   aria-describedby="dialog-description-1"
   class="c0 c1"
-  data-placement="bottom-start"
+  data-floating-ui-focusable=""
+  data-placement="left"
   display="inline-block"
   role="dialog"
-  style="position: absolute; top: 8px; left: 8px;"
+  style="position: absolute; top: 8px; left: -8px; visibility: visible;"
   tabindex="-1"
   width="400"
 >
@@ -453,9 +456,9 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
   <div
     class="c5"
     color="background.lightest"
-    data-placement="bottom-start"
+    data-placement="left"
     data-testid="popover-arrow"
-    style="top: 3px; left: -1px;"
+    style="top: -1px; right: 3px;"
   />
 </div>
 `;
