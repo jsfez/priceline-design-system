@@ -116,12 +116,12 @@ function PopoverContent({
         aria-describedby={`dialog-description-${idx}`}
         className={className}
         data-placement={placement}
-        ref={popoverRef}
         role='dialog'
         style={styles?.popover}
         p={p}
         {...styleProps}
         {...props}
+        ref={popoverRef}
       >
         <ThemeConsumer>
           {(theme) => (

@@ -1,4 +1,4 @@
-function getPopoverStyles({ arrowX, arrowY, placement = 'top', strategy = 'absolute', x, y }) {
+function getPopoverStyles({ arrowX, arrowY, isPositioned, placement = 'top', strategy = 'absolute', x, y }) {
   const side = placement.split('-')[0]
   const oppositeSide = {
     top: 'bottom',
@@ -7,7 +7,7 @@ function getPopoverStyles({ arrowX, arrowY, placement = 'top', strategy = 'absol
     left: 'right',
   }[side]
 
-  return {
+  const styles = {
     arrow: {
       top: arrowY ?? '',
       left: arrowX ?? '',
@@ -19,8 +19,10 @@ function getPopoverStyles({ arrowX, arrowY, placement = 'top', strategy = 'absol
       position: strategy,
       top: y ?? 0,
       left: x ?? 0,
+      visibility: isPositioned ? 'visible' : 'hidden',
     },
   }
+  return styles
 }
 
 export default getPopoverStyles

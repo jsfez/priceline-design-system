@@ -52,10 +52,10 @@ function Popover({
     <>
       {children &&
         React.cloneElement(children, {
+          ref: reference,
           ...getReferenceProps({
             'aria-label': ariaLabel,
             type: 'button',
-            ref: reference,
             onClick: !openOnHover && toggleIsOpenOnClick ? handleToggle : undefined,
           }),
         })}

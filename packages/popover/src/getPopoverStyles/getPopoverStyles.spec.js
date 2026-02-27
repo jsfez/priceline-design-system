@@ -5,6 +5,7 @@ const mockRefs = { reference: { current: { offsetWidth: 20, offsetHeight: 20 } }
 const props = {
   arrowX: 5,
   arrowY: 10,
+  isPositioned: true,
   refs: mockRefs,
   strategy: 'absolute',
   x: 200,
@@ -25,6 +26,7 @@ describe('getPopoverStyles', () => {
         position: 'absolute',
         top: 100,
         left: 200,
+        visibility: 'visible',
       })
     })
 
@@ -40,6 +42,7 @@ describe('getPopoverStyles', () => {
         position: 'absolute',
         top: 100,
         left: 200,
+        visibility: 'visible',
       })
     })
 
@@ -55,6 +58,7 @@ describe('getPopoverStyles', () => {
         position: 'absolute',
         top: 100,
         left: 200,
+        visibility: 'visible',
       })
     })
 
@@ -70,6 +74,7 @@ describe('getPopoverStyles', () => {
         position: 'absolute',
         top: 0,
         left: 0,
+        visibility: 'hidden',
       })
     })
   })
@@ -87,6 +92,7 @@ describe('getPopoverStyles', () => {
         position: 'absolute',
         top: 100,
         left: 200,
+        visibility: 'visible',
       })
     })
 
@@ -102,6 +108,7 @@ describe('getPopoverStyles', () => {
         position: 'absolute',
         top: 100,
         left: 200,
+        visibility: 'visible',
       })
     })
 
@@ -117,6 +124,7 @@ describe('getPopoverStyles', () => {
         position: 'absolute',
         top: 100,
         left: 200,
+        visibility: 'visible',
       })
     })
 
@@ -132,6 +140,7 @@ describe('getPopoverStyles', () => {
         position: 'absolute',
         top: 0,
         left: 0,
+        visibility: 'hidden',
       })
     })
   })
@@ -149,6 +158,7 @@ describe('getPopoverStyles', () => {
         position: 'absolute',
         top: 100,
         left: 200,
+        visibility: 'visible',
       })
     })
 
@@ -164,6 +174,7 @@ describe('getPopoverStyles', () => {
         position: 'absolute',
         top: 100,
         left: 200,
+        visibility: 'visible',
       })
     })
 
@@ -179,6 +190,7 @@ describe('getPopoverStyles', () => {
         position: 'absolute',
         top: 100,
         left: 200,
+        visibility: 'visible',
       })
     })
 
@@ -194,6 +206,7 @@ describe('getPopoverStyles', () => {
         position: 'absolute',
         top: 0,
         left: 0,
+        visibility: 'hidden',
       })
     })
   })
@@ -211,6 +224,7 @@ describe('getPopoverStyles', () => {
         position: 'absolute',
         top: 100,
         left: 200,
+        visibility: 'visible',
       })
     })
 
@@ -226,6 +240,7 @@ describe('getPopoverStyles', () => {
         position: 'absolute',
         top: 100,
         left: 200,
+        visibility: 'visible',
       })
     })
 
@@ -241,6 +256,7 @@ describe('getPopoverStyles', () => {
         position: 'absolute',
         top: 100,
         left: 200,
+        visibility: 'visible',
       })
     })
 
@@ -256,6 +272,7 @@ describe('getPopoverStyles', () => {
         position: 'absolute',
         top: 0,
         left: 0,
+        visibility: 'hidden',
       })
     })
   })
@@ -273,6 +290,7 @@ describe('getPopoverStyles', () => {
       position: 'fixed',
       top: 0,
       left: 0,
+      visibility: 'hidden',
     })
   })
 })

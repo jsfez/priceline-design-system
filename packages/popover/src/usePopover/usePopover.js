@@ -9,7 +9,7 @@ import {
   useFocus,
   useHover,
   useInteractions,
-} from '@floating-ui/react-dom-interactions'
+} from '@floating-ui/react'
 import { useRef, useState } from 'react'
 import getPopoverStyles from '../getPopoverStyles'
 
@@ -42,21 +42,24 @@ function usePopover({
   }
 
   const handleToggle = (e) => {
-    setOpen((isOpen) => {
-      if (isOpen) {
-        onBeforeClose?.(e)
-        onClose?.(e)
-      } else {
-        onBeforeOpen?.(e)
-        onOpen?.(e)
-      }
-      return !isOpen
+    let wasOpen
+    setOpen((prev) => {
+      wasOpen = prev
+      return !prev
     })
+    if (wasOpen) {
+      onBeforeClose?.(e)
+      onClose?.(e)
+    } else {
+      onBeforeOpen?.(e)
+      onOpen?.(e)
+    }
   }
 
   const arrowRef = useRef(null)
   const {
     context,
+    isPositioned,
     middlewareData,
     placement: actualPlacement,
     refs,
@@ -87,12 +90,22 @@ function usePopover({
   ])
   const { x: arrowX, y: arrowY } = middlewareData?.arrow || {}
 
-  const styles = getPopoverStyles({ arrowX, arrowY, placement: actualPlacement, refs, strategy, x, y })
+  const styles = getPopoverStyles({
+    arrowX,
+    arrowY,
+    isPositioned,
+    placement: actualPlacement,
+    strategy,
+    x,
+    y,
+  })
   return {
     ...floatingValues,
     arrowRef,
+    floating: refs.setFloating,
     isPopoverOpen: isOpen,
     placement: actualPlacement,
+    reference: refs.setReference,
     styles,
     getFloatingProps,
     getReferenceProps,
