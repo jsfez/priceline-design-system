@@ -179,7 +179,7 @@ exports[`Popover UI Positioning Bottom 1`] = `
   aria-describedby="dialog-description-1"
   class="c0 c1"
   data-floating-ui-focusable=""
-  data-placement="left"
+  data-placement="bottom"
   display="inline-block"
   role="dialog"
   style="position: absolute; top: 8px; left: -8px; visibility: visible;"
@@ -218,9 +218,9 @@ exports[`Popover UI Positioning Bottom 1`] = `
   <div
     class="c5"
     color="background.lightest"
-    data-placement="left"
+    data-placement="bottom"
     data-testid="popover-arrow"
-    style="top: -1px; right: 3px;"
+    style="top: 3px;"
   />
 </div>
 `;
@@ -298,7 +298,7 @@ exports[`Popover UI Positioning Bottom End 1`] = `
   aria-describedby="dialog-description-1"
   class="c0 c1"
   data-floating-ui-focusable=""
-  data-placement="left"
+  data-placement="bottom-end"
   display="inline-block"
   role="dialog"
   style="position: absolute; top: 8px; left: -8px; visibility: visible;"
@@ -337,9 +337,9 @@ exports[`Popover UI Positioning Bottom End 1`] = `
   <div
     class="c5"
     color="background.lightest"
-    data-placement="left"
+    data-placement="bottom-end"
     data-testid="popover-arrow"
-    style="top: -1px; right: 3px;"
+    style="top: 3px;"
   />
 </div>
 `;
@@ -417,7 +417,7 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
   aria-describedby="dialog-description-1"
   class="c0 c1"
   data-floating-ui-focusable=""
-  data-placement="left"
+  data-placement="bottom-start"
   display="inline-block"
   role="dialog"
   style="position: absolute; top: 8px; left: -8px; visibility: visible;"
@@ -456,9 +456,9 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
   <div
     class="c5"
     color="background.lightest"
-    data-placement="left"
+    data-placement="bottom-start"
     data-testid="popover-arrow"
-    style="top: -1px; right: 3px;"
+    style="top: 3px;"
   />
 </div>
 `;
