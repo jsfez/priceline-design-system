@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-menu",
+      "comment": "Fixed Jest configuration to correctly resolve pcln-popover from source, fixing test failures in jsdom environment",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-menu"
+}
