@@ -7,7 +7,7 @@ function getPopoverStyles({ arrowX, arrowY, isPositioned, placement = 'top', str
     left: 'right',
   }[side]
 
-  const styles = {
+  return {
     arrow: {
       top: arrowY ?? '',
       left: arrowX ?? '',
@@ -22,7 +22,6 @@ function getPopoverStyles({ arrowX, arrowY, isPositioned, placement = 'top', str
       visibility: isPositioned ? 'visible' : 'hidden',
     },
   }
-  return styles
 }
 
 export default getPopoverStyles

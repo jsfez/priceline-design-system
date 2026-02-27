@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "Refactored code to be compatible with react19 and added react 19 to the perdeps",
+      "type": "major"
+    }
+  ],
+  "packageName": "pcln-popover"
+}
