@@ -1,6 +1,13 @@
 # Change Log - pcln-slider
 
-This log was last generated on Wed, 17 Sep 2025 13:58:27 GMT and should not be manually modified.
+This log was last generated on Wed, 06 May 2026 13:53:54 GMT and should not be manually modified.
+
+## 6.3.0
+Wed, 06 May 2026 13:53:54 GMT
+
+### Minor changes
+
+- Remove unused deps rc-tooltip and rc-util from direct dependencies
 
 ## 6.2.6
 Wed, 17 Sep 2025 13:58:27 GMT

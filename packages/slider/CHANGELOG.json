@@ -2,6 +2,20 @@
   "name": "pcln-slider",
   "entries": [
     {
+      "version": "6.3.0",
+      "tag": "pcln-slider_v6.3.0",
+      "date": "Wed, 06 May 2026 13:53:54 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Remove unused deps rc-tooltip and rc-util from direct dependencies",
+            "author": "Huzefa Kagdi <huzefa.kagdi@priceline.com>",
+            "commit": "165659295c94b891edc95c816ec070a9bababd1e"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.2.6",
       "tag": "pcln-slider_v6.2.6",
       "date": "Wed, 17 Sep 2025 13:58:27 GMT",
