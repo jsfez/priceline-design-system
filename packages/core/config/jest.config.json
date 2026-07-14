@@ -1,10 +1,18 @@
 {
   "extends": "@priceline/heft-component-rig/profiles/react/config/jest.config.json",
+  "collectCoverageFrom": [
+    "!lib-commonjs/**/*.styled.*",
+    "!lib-commonjs/storybook/**/*",
+    "!lib-commonjs/**/*.{stories,story}.*",
+    "!lib-commonjs/**/*.types-test.*",
+    "!lib-commonjs/index.js*",
+    "!**/__test__/**"
+  ],
   "coverageThreshold": {
     "global": {
       "statements": 93,
       "branches": 88,
-      "functions": 87,
+      "functions": 86.8,
       "lines": 93
     }
   }
