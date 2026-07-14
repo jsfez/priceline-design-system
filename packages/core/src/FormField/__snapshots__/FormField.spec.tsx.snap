@@ -203,6 +203,209 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
 </DocumentFragment>
 `;
 
+exports[`FormField readOnly state renders input with icon - readOnly 1`] = `
+<DocumentFragment>
+  .c7 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.c8 {
+  outline: none;
+}
+
+.c9 {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  color: #001833;
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  margin: 0;
+  padding: 14px 12px 14px 12px;
+  border-color: #c0cad5;
+  font-size: 16px;
+  border-radius: 12px;
+  padding-left: 40px;
+}
+
+.c9::-webkit-input-placeholder {
+  color: #4f6f8f;
+}
+
+.c9::-moz-placeholder {
+  color: #4f6f8f;
+}
+
+.c9:-ms-input-placeholder {
+  color: #4f6f8f;
+}
+
+.c9::placeholder {
+  color: #4f6f8f;
+}
+
+.c9::-ms-clear {
+  display: none;
+}
+
+.c9:disabled {
+  background-color: #f4f6f8;
+  color: #4f6f8f;
+  cursor: not-allowed;
+}
+
+.c9:focus {
+  outline: 0;
+  border-color: #0068ef;
+  box-shadow: 0 0 0 2px #0068ef;
+}
+
+.c3 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+  color: #4f6f8f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 10px;
+  margin-left: 40px;
+  padding-top: 6px;
+  margin-bottom: -20px;
+  font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+}
+
+.c1 {
+  border-radius: 12px;
+}
+
+.c5 {
+  margin-right: -40px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c2 {
+  background-color: #edf0f3;
+}
+
+.c2.c2.c2 * {
+  background-color: transparent;
+  color: #4f6f8f;
+  cursor: not-allowed;
+}
+
+@media screen and (min-width:32em) {
+
+}
+
+@media screen and (min-width:40em) {
+  .c9 {
+    font-size: 14px;
+  }
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1 c2"
+      readonly=""
+    >
+      <label
+        class="c3"
+        color="text.light"
+        font-size="10"
+        font-weight="700"
+        for="email"
+        letter-spacing="0.2px"
+        style="height: 20px; transition-property: opacity; transition-duration: .1s; opacity: 1; pointer-events: none; position: relative; width: calc(100% - 40px);"
+      >
+        Email Address
+      </label>
+      <div
+        class="c4"
+      >
+        <div
+          class="c5 c6"
+          data-testid="icon-field-prefix-icons"
+        >
+          <svg
+            aria-hidden="true"
+            class="c7 c8"
+            data-testid="email-icon"
+            fill="currentcolor"
+            focusable="false"
+            height="24"
+            role="img"
+            tabindex="-1"
+            viewBox="0 -960 960 960"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160zm640-480L501-453q-5 3-10.5 4.5T480-447q-5 0-10.5-1.5T459-453L160-640v400h640v-400zM480-520l320-200H160l320 200zM160-640v10-59 1-32 32-.5 58.5-10 400-400z"
+            />
+          </svg>
+        </div>
+        <input
+          class="c9"
+          font-size="2,,1"
+          id="email"
+          name="email"
+          placeholder="Email"
+          readonly=""
+          style="transition-property: padding-top, padding-bottom; transition-duration: .1s; padding-top: 20px; padding-bottom: 8px;"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`FormField disabled state renders select with icon - disabled 1`] = `
 <DocumentFragment>
   .c7 {

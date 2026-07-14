@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "fix(DX-2098): restore children on FormFieldProps in emitted types",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

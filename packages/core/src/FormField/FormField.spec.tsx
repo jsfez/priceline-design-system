@@ -128,4 +128,18 @@ describe('FormField', () => {
       expect(asFragment()).toMatchSnapshot()
     })
   })
+
+  describe('readOnly state', () => {
+    it('renders input with icon - readOnly', () => {
+      const { asFragment } = render(
+        <FormField readOnly>
+          <Label>Email Address</Label>
+          <EmailIcon data-testid='email-icon' />
+          <Input id='email' name='email' placeholder='Email' />
+        </FormField>
+      )
+
+      expect(asFragment()).toMatchSnapshot()
+    })
+  })
 })
