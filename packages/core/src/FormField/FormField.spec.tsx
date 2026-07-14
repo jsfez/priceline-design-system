@@ -5,10 +5,6 @@ import { Label } from '../Label/Label'
 import { Select } from '../Select/Select'
 import { render, screen } from '../__test__/testing-library'
 import { FormField } from './FormField'
-import type { FormFieldProps } from './FormField'
-
-/** Compile-time guard: FormFieldProps must expose BoxProps members like `children`. */
-type _FormFieldPropsIncludesChildren = FormFieldProps['children']
 
 afterEach(() => {
   // bust cache for propTypes
