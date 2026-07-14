@@ -9,7 +9,7 @@ import { getPaletteColor } from '../utils/utils'
 /**
  * @public
  */
-export interface FormFieldProps extends BoxProps {
+export type FormFieldProps = BoxProps & {
   disabled?: boolean
   readOnly?: boolean
 }
