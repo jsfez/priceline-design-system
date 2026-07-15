@@ -57,4 +57,4 @@ jobs:
         run: node common/scripts/install-run-rush.js publish --apply --add-commit-details --prerelease-name=${{ github.event.inputs.prereleaseName }} --partial-prerelease
 
       - name: publish npm-package
-        run: node common/scripts/install-run-rush.js publish --publish --include-all --tag="beta" --npm-auth-token="${{ secrets.NPM_AUTOMATION_TOKEN }}"
+        run: node common/scripts/install-run-rush.js publish --publish --tag="beta" --npm-auth-token="${{ secrets.NPM_AUTOMATION_TOKEN }}"
