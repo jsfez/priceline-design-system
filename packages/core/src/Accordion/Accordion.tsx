@@ -83,12 +83,6 @@ export function Accordion({
               headerDividerColor={index > 0 && headerDividerColor}
             >
               <StyledTrigger {...props} p={p} variation={variation} hoverBg={child.hoverBg}>
-                <Flex width='100%' justifyContent='space-between' alignItems='center'>
-                  {child.headerLabel}
-                  {child.headerActions ? (
-                    <Box onClick={(e) => e.preventDefault()}>{child.headerActions}</Box>
-                  ) : null}
-                </Flex>
                 {useTextToggle ? (
                   <>
                     <Text.span textStyle='captionBold' color='primary.base' className='lessText'>
@@ -103,6 +97,12 @@ export function Accordion({
                     <StyledChevron className='chevron' variation={variation} />
                   </IconContainer>
                 )}
+                <Flex width='100%' justifyContent='space-between' alignItems='center'>
+                  {child.headerLabel}
+                  {child.headerActions ? (
+                    <Box onClick={(e) => e.preventDefault()}>{child.headerActions}</Box>
+                  ) : null}
+                </Flex>
               </StyledTrigger>
               <StyledContent {...props} p={p} variation={variation} contentBg={child.contentBg}>
                 {child.content}
