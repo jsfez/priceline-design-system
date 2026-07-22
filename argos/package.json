@@ -1,0 +1,13 @@
+{
+  "//": "This folder is deliberately outside the Rush workspace: it installs on its own so nothing in rush.json, the pnpm lockfile or the existing build graph has to change. The `type` field scopes ESM to this folder, since the repository root has no package.json at all.",
+  "name": "argos-visual-tests",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "playwright test --config playwright.config.ts"
+  },
+  "devDependencies": {
+    "@argos-ci/playwright": "^7.3.6",
+    "@playwright/test": "^1.61.1"
+  }
+}

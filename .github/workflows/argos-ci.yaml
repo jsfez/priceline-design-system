@@ -1,0 +1,62 @@
+name: Argos CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# Argos authenticates through GitHub's OIDC provider, so this workflow needs no
+# secret of its own.
+permissions:
+  contents: read
+  id-token: write
+
+env:
+  BROWSERSLIST_IGNORE_OLD_DATA: 1
+
+jobs:
+  argos-ci:
+    # `playwright install --with-deps` pulls `libasound2`, which 24.04 renamed.
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Argos walks the history to find the base build
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+
+      - name: PNPM cache via actions/cache@v3
+        id: pnpm-cache
+        uses: actions/cache@v3
+        with:
+          path: /home/runner/work/design-system/design-system/common/temp/pnpm-store/v3
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
+      - name: Install dependencies
+        run: node common/scripts/install-run-rush.js install
+
+      - name: Build components
+        run: node common/scripts/install-run-rush.js build --timeline
+
+      # `rush build:storybook` also uploads to Chromatic, so this calls the
+      # build script on its own and leaves the existing Chromatic workflow to
+      # do exactly what it does today.
+      - name: Build Storybook
+        working-directory: ./apps/storybook
+        run: node ../../common/scripts/install-run-rushx.js storybook:build
+
+      - name: Install Argos test dependencies
+        working-directory: ./argos
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Take screenshots
+        working-directory: ./argos
+        run: npx playwright test --config playwright.config.ts

@@ -94,3 +94,7 @@ packages/icons/components/
 package-lock.json
 .npmrc
 RELEASE_NOTES.md
+# Argos visual tests
+!argos/package-lock.json
+argos/test-results/
+screenshots/
